@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #555;
+}
+
+h1, h2, h3 {
+	font-family: "Teko", Helvetica, Arial, sans-serif;
+	font-size: 40px;
+	text-transform: uppercase;
+	color: #000;
+}
+
+h1 {
+	color: #fff;
+	font-size: 120px;
+	font-weight: 300;
+	letter-spacing: 10px;
+}
+
+a {
+	font-family: "Teko", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.top_bar {
+	height: 70px;
+	background-color: #fff;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.logo img {
+	float: left;
+	height: 70px;
+}
+
+nav.navigation {
+	float: right;
+}
+
+nav.navigation a {
+	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #7f7f7f;
+	text-transform: none;
+}
+
+nav.navigation li {
+	display: inline-block;
+	padding-top: 29px;
+	padding-bottom: 20px;
+	margin-right: 42px;
+}
+
+nav.navigation li:last-child {
+	margin-right: 0px;
+}
+
+nav.navigation li.active a, nav.navigation li:hover a {
+	color: #f63c3c;
+}
+
+nav.navigation li.active {
+	border-bottom: 4px solid #fc3c3c;
+}
+
+section.hero {
+	position: relative;
+	background: url(../img/background.jpg) center center no-repeat;
+	background-size: cover;
+	height: 100vh;
+	min-height: 800px;
+}
+
+.title {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin-top: 70px;
+	width: 75%;
+}
+
+.title p {
+	color: #fff;
+	font-size: 22px;
+	width: 70%;
+	margin: 0 auto;
+	opacity: 0.7;
+	line-height: 1.2em;
+}
+
+a.explore {
+	color: #000;
+	display: inline-block;
+	font-size: 20px;
+	padding: 18px 50px;
+	background: #fff;
+	transition: all 0.3s ease-out;
+}
+
+a.explore:hover {
+	background: #f63c3c;
+	color: #fff;
+}
+
+.hero nav {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.hero nav ul {
+	list-style: none;
+}
+
+.hero nav ul li {
+	display: inline-block;
+	width: 40px;
+	height: 4px;
+	background-color: rgba(255, 255, 255, 0.22);
+	margin-right: 20px;
+}
+
+.hero nav ul li:last-child {
+	margin-right: 0px;
+}
+
+.hero nav ul li.active {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.work h2 {
+	text-align: center;
+	font-weight: 400;
+	margin: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
