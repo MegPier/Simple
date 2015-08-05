@@ -1,83 +1,82 @@
-* {
+*{
 	box-sizing: border-box;
 }
 
-body {
+body{
 	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	color: #555;
+	font-weight: 300;
+	color: #555555;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
 	font-family: "Teko", Helvetica, Arial, sans-serif;
 	font-size: 40px;
 	text-transform: uppercase;
 	color: #000;
 }
 
-h1 {
-	color: #fff;
+h1{
 	font-size: 120px;
-	font-weight: 300;
-	letter-spacing: 10px;
+	letter-spacing: 8px;
+	color: #fff;
 }
 
-a {
+a{
 	font-family: "Teko", Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
-.top_bar {
+.top_bar{
+	width: 100%;
 	height: 70px;
 	background-color: #fff;
 	position: fixed;
-	width: 100%;
-	z-index: 9999;
+	z-index: 100;
 }
 
-.container {
+.container{
 	max-width: 1170px;
 	margin: 0 auto;
 	width: 70%;
 }
 
-.logo img {
+.logo{
 	float: left;
-	height: 70px;
 }
 
-nav.navigation {
+nav.navigation{
 	float: right;
 }
 
-nav.navigation a {
+nav.navigation a{
 	font-family: "Titillium Web", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	color: #7f7f7f;
 	text-transform: none;
 }
 
-nav.navigation li {
+nav.navigation li{
 	display: inline-block;
 	padding-top: 29px;
-	padding-bottom: 20px;
 	margin-right: 42px;
 }
 
-nav.navigation li:last-child {
-	margin-right: 0px;
+nav.navigation li:last-child{
+	margin-right: 0;
 }
 
-nav.navigation li.active a, nav.navigation li:hover a {
+nav.navigation li.active{
+	border-bottom: 4px solid #f63c3c;
+	padding-bottom: 22px;
+}
+
+nav.navigation li.active a, nav.navigation li a:hover{
 	color: #f63c3c;
 }
 
-nav.navigation li.active {
-	border-bottom: 4px solid #fc3c3c;
-}
-
-section.hero {
+.hero{
 	position: relative;
 	background: url(../img/background.jpg) center center no-repeat;
 	background-size: cover;
@@ -85,79 +84,253 @@ section.hero {
 	min-height: 800px;
 }
 
-.title {
+.title{
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	margin-top: 70px;
-	width: 75%;
 }
 
-.title p {
+.title p{
 	color: #fff;
 	font-size: 22px;
 	width: 70%;
-	margin: 0 auto;
+	margin: 50px auto;
 	opacity: 0.7;
 	line-height: 1.2em;
 }
 
-a.explore {
-	color: #000;
+
+a.explore{
 	display: inline-block;
+	color: #000;
 	font-size: 20px;
 	padding: 18px 50px;
 	background: #fff;
 	transition: all 0.3s ease-out;
 }
 
-a.explore:hover {
-	background: #f63c3c;
+a.explore:hover{
 	color: #fff;
+	background: #f63c3c;
 }
 
-.hero nav {
+.hero nav{
 	position: absolute;
-	bottom: 20px;
 	left: 50%;
+	bottom: 20px;
 	transform: translateX(-50%);
 }
 
-.hero nav ul {
+.hero nav ul{
 	list-style: none;
 }
 
-.hero nav ul li {
+.hero nav ul li{
 	display: inline-block;
 	width: 40px;
 	height: 4px;
 	background-color: rgba(255, 255, 255, 0.22);
-	margin-right: 20px;
+	margin-right: 7px;
 }
 
-.hero nav ul li:last-child {
-	margin-right: 0px;
+.hero nav ul li:last-child{
+	margin-right: 0;
 }
 
-.hero nav ul li.active {
+.hero nav ul li.active{
 	background-color: rgba(255, 255, 255, 1);
 }
 
-.work h2 {
+.work h2{
 	text-align: center;
-	font-weight: 400;
 	margin: 50px 0;
+}
+
+article{
+	float: left;
+	width: 48%;
+	margin: 0 0 30px 20px;
+	text-align: center;
+}
+
+figure {
+	margin-bottom: 20px;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+}
+
+figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: inherit;
+	background-color: #f63c3c;
+	border: 20px solid #352d2f;
+	opacity: 0;
+	font-size: 24px;
+	transition: all 0.2s ease-out;
+}
+
+figcaption div {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-weight: 300;
+	letter-spacing: 4px;
+}
+
+figcaption div h3 {
+	font-size: 24px;
+	color: #fff;
+}
+
+figcaption div p {
+	font-family: "Teko", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 40px;
+}
+
+figcaption:hover{
+	opacity: 1;
+}
+
+figure img {
+	width: 100%;
+}
+
+article h3 {
+	letter-spacing: 3px;
+}
+
+article p {
+	width: 60%;
+	margin: 0 auto;
+	line-height: 1.3em;
+}
+
+.show_more {
+	position: relative;
+	top: 10px;
+	width: 159px;
+	text-align: center;
+	border-bottom: 4px solid #f63c3c;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	margin-bottom: 75px;
+}
+
+.show_more a {
+	font-size: 20px;
+	color: #f63c3c;
+	letter-spacing: 2px;
+}
+
+.cta {
+	background-color: #f63c3c;
+	height: 240px;
+	text-align: center;
+	padding-top: 60px;
+	color: #fff;
+	margin-bottom: 65px;
+}
+
+.cta h2 {
+	color: #fff;
+	letter-spacing: 3px;
+	margin-bottom: 5px;
+}
+
+.cta p {
+	margin-bottom: 20px;
+}
+
+a.button {
+	display: block;
+	font-size: 20px;
+	color: #000;
+	background-color: #fff;
+	width: 270px;
+	height: 50px;
+	margin: 0 auto;
+	padding-top: 17px;
+	letter-spacing: 3px;
+	text-align: center;
+	transition: all 0.3s ease-out;
+
+}
+
+a.button:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+section.contact div.container h2 {
+	letter-spacing: 3px;
+}
+
+section.contact div.container p {
+	margin-bottom: 65px;
+}
+
+ul.social {
+	margin-bottom: 80px;
+}
+
+.social li {
+	position: relative;
+	float: left;
+	height: 160px;
+	width: 210px;
+	background-color: #000;
+	margin: 0 auto;
+	margin-right: 20px;
+	margin-bottom: 80px;
+	transition: all 0.3s ease-out;
 }
 
 
 
+.social li:last-child {
+	margin-right: 0;
+}
 
+.social li a {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
 
+.social li a i {
+	font-size: 50px;
+	display: block;
+	margin-bottom: 10px;
+}
 
+.social li:hover {
+	background-color: #f63c3c;
+}
 
-
+footer {
+	clear: both;
+	font-size: 13px;
+}
 
 
 
